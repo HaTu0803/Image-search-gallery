@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <div class="Component">
+          <h1>Image search gallery - Intern</h1>
+          <form class="search-form">
+            <div class="search-box">
+              <span class="search-icon material-symbols-outlined">search</span>
+              <input
+                type="search"
+                placeholder="Enter the content you want to search for"
+                class="input"
+                id="search-input"
+              />
+            </div>
+            <input type="submit" value="SEARCH" class="button-submit" />
+          </form>
+          <div class="group-keyword">
+            Hot search:
+            <button class="hot-keyword">dog</button>
+            <button class="hot-keyword">cat</button>
+            <button class="hot-keyword">love</button>
+            <button class="hot-keyword">beautiful</button>
+            <button class="hot-keyword">natural</button>
+            <button class="hot-keyword">iphone</button>
+            <button class="hot-keyword">summer</button>
+            <button class="hot-keyword">computer</button>
+            <button class="hot-keyword">covid</button>
+            <button class="hot-keyword">family</button>
+          </div>
+
+          <ul class="photo-grid" id="photo-grid"></ul>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Loading Axios from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
